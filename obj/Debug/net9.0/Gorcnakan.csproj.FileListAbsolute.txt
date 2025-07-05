@@ -1,0 +1,15 @@
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/bin/Debug/net9.0/Gorcnakan
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/bin/Debug/net9.0/Gorcnakan.deps.json
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/bin/Debug/net9.0/Gorcnakan.runtimeconfig.json
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/bin/Debug/net9.0/Gorcnakan.dll
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/bin/Debug/net9.0/Gorcnakan.pdb
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.GeneratedMSBuildEditorConfig.editorconfig
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.AssemblyInfoInputs.cache
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.AssemblyInfo.cs
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.csproj.CoreCompileInputs.cache
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.sourcelink.json
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.dll
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/refint/Gorcnakan.dll
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.pdb
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/Gorcnakan.genruntimeconfig.cache
+/home/davit/Desktop/csharp2/Kima/Gorcnakan/obj/Debug/net9.0/ref/Gorcnakan.dll
