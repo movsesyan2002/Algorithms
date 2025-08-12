@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gorcnakan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43dafddf2d5e98864e81e36945506b3354dbf0fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81d6da8114adf899f5517d13af45b65b3a3b8979")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gorcnakan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gorcnakan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
