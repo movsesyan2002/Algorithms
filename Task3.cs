@@ -48,7 +48,7 @@ public class Solution
 
             if (nums[mid] >= target)
             {
-                right = mid - 1;
+                right = mid ;
             }
 
             else
@@ -65,7 +65,7 @@ public class Solution
     public static int BinarySearchU(int[] nums, int target) // UPPER BOUND
     {
         int left = 0;
-        int right = nums.Length - 1;
+        int right = nums.Length ;
         int mid = 0;
 
 
@@ -80,7 +80,7 @@ public class Solution
 
             else
             {
-                right = mid - 1;
+                right = mid;
             }
         }
 
