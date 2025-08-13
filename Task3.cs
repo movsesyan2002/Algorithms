@@ -1,147 +1,147 @@
-// using System.Dynamic;
-// using System.Formats.Asn1;
-// using System.Linq.Expressions;
-// using System.Text;
+using System.Dynamic;
+using System.Formats.Asn1;
+using System.Linq.Expressions;
+using System.Text;
 
-// // public class Solution
-// // {
-// //     public static int[] TwoSum(int[] nums, int target)
-// //     {
+public class Solution
+{
+    public static int[] TwoSum(int[] nums, int target)
+    {
 
-// //         Dictionary<int, int> keyvalue = new Dictionary<int, int>();
+        Dictionary<int, int> keyvalue = new Dictionary<int, int>();
 
-// //         int[] arr = new int[2]; //2, 7, 11, 15 target = 9
-// //         for (int i = 0; i < nums.Length; i++)
-// //         {
-// //             if (keyvalue.ContainsKey(target - nums[i]) == false)
-// //             {
-// //                 try
-// //                 {
-// //                     keyvalue.Add(nums[i], i);
-// //                 }
-// //                 catch
-// //                 {
+        int[] arr = new int[2]; //2, 7, 11, 15 target = 9
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (keyvalue.ContainsKey(target - nums[i]) == false)
+            {
+                try
+                {
+                    keyvalue.Add(nums[i], i);
+                }
+                catch
+                {
 
-// //                     continue;
-// //                 }
-// //             }
+                    continue;
+                }
+            }
 
-// //             else if (keyvalue.ContainsKey(target - nums[i]) == true)
-// //             {
-// //                 arr[0] = keyvalue[target - nums[i]];
-// //                 arr[1] = i;
-// //                 break;
-// //             }
-// //         }
-// //         return arr;
-// //     }
-
-
-// //     public static int BinarySearchL(int[] nums, int target) // LOWER BOUND
-// //     {
-// //         int left = 0;
-// //         int right = nums.Length;
-// //         int mid = 0;
-// //         while (left < right)
-// //         {
-// //             mid = left + (right - left) / 2;
-
-// //             if (nums[mid] >= target)
-// //             {
-// //                 right = mid - 1;
-// //             }
-
-// //             else
-// //             {
-// //                 left = mid + 1;
-// //             }
-// //         }
+            else if (keyvalue.ContainsKey(target - nums[i]) == true)
+            {
+                arr[0] = keyvalue[target - nums[i]];
+                arr[1] = i;
+                break;
+            }
+        }
+        return arr;
+    }
 
 
-// //         return left;
+    public static int BinarySearchL(int[] nums, int target) // LOWER BOUND
+    {
+        int left = 0;
+        int right = nums.Length;
+        int mid = 0;
+        while (left < right)
+        {
+            mid = left + (right - left) / 2;
 
-// //     }
+            if (nums[mid] >= target)
+            {
+                right = mid - 1;
+            }
 
-// //     public static int BinarySearchU(int[] nums, int target) // UPPER BOUND
-// //     {
-// //         int left = 0;
-// //         int right = nums.Length - 1;
-// //         int mid = 0;
-
-
-// //         while (left < right)
-// //         {
-// //             mid = left + (right - left) / 2;
-
-// //             if (nums[mid] <= target)
-// //             {
-// //                 left = mid + 1;
-// //             }
-
-// //             else
-// //             {
-// //                 right = mid - 1;
-// //             }
-// //         }
+            else
+            {
+                left = mid + 1;
+            }
+        }
 
 
-// //         return right;
+        return left;
 
-// //     }
+    }
 
-// //     //     public static bool BinarySearch(int[] nums, int target, int start, int end)
-// //     //     {
-// //     //         int mid = start + (end - start) / 2;
-
-// //     //         if (start > end)
-// //     //         {
-// //     //             return false;
-// //     //         }
-
-// //     //         if (nums[mid] == target)
-// //     //         {
-// //     //             return true;
-// //     //         }
-
-// //     //         else if (nums[mid] > target)
-// //     //         {
-// //     //             return BinarySearch(nums, target, 0, mid - 1);
-// //     //         }
-
-// //     //         else
-// //     //         {
-// //     //             return BinarySearch(nums, target, mid + 1, end);
-// //     //         }
+    public static int BinarySearchU(int[] nums, int target) // UPPER BOUND
+    {
+        int left = 0;
+        int right = nums.Length - 1;
+        int mid = 0;
 
 
-// //     //     }
-// //     public static int FindKthPositive(int[] arr, int k)
-// //     {
-// //         int x = int.MinValue;
-// //         int[] nums = new int[arr[arr.Length - 1] + 1];
-// //         for (int i = 0; i < arr.Length; ++i)
-// //         {
-// //             nums[arr[i]]++;
-// //         }
+        while (left < right)
+        {
+            mid = left + (right - left) / 2;
+
+            if (nums[mid] <= target)
+            {
+                left = mid + 1;
+            }
+
+            else
+            {
+                right = mid - 1;
+            }
+        }
 
 
+        return right;
 
-// //         List<int> notinarray = new();
-// //         for (int i = 0; i < nums.Length; ++i)
-// //         {
-// //             if (nums[i] == 0)
-// //             {
-// //                 notinarray.Add(i);
-// //             }
-// //         }
+    }
+
+        public static bool BinarySearch(int[] nums, int target, int start, int end)
+        {
+            int mid = start + (end - start) / 2;
+
+            if (start > end)
+            {
+                return false;
+            }
+
+            if (nums[mid] == target)
+            {
+                return true;
+            }
+
+            else if (nums[mid] > target)
+            {
+                return BinarySearch(nums, target, 0, mid - 1);
+            }
+
+            else
+            {
+                return BinarySearch(nums, target, mid + 1, end);
+            }
 
 
-// //         return notinarray[k];
-// //     }
+        }
+    public static int FindKthPositive(int[] arr, int k)
+    {
+        int x = int.MinValue;
+        int[] nums = new int[arr[arr.Length - 1] + 1];
+        for (int i = 0; i < arr.Length; ++i)
+        {
+            nums[arr[i]]++;
+        }
 
 
 
-// // }
+        List<int> notinarray = new();
+        for (int i = 0; i < nums.Length; ++i)
+        {
+            if (nums[i] == 0)
+            {
+                notinarray.Add(i);
+            }
+        }
+
+
+        return notinarray[k];
+    }
+
+
+
+}
 
 
 
